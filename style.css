@@ -19,17 +19,33 @@ a {
 .container {
   width: 100%;
   height: auto;
+  position: relative;
+  overflow: hidden;
 }
 
 .header-section {
+  position: fixed;
   width: 100%;
+  height: auto;
+  top: 0;
+  left: 0;
+  z-index: 1;
 }
 header.header-container {
-  background: #61baff;
+  background: transparent;
+  transition: all 0.35s;
+}
+
+.header-section.scrolling .header-container {
+  background-color: #fff;
+}
+
+.header-section.scrolling a.nav-link {
+  color: #414c5a;
 }
 
 .navigation-container {
-  max-width: 90%;
+  max-width: 80%;
   margin: 0 auto;
   padding: 10px 0;
   display: flex;
@@ -74,15 +90,16 @@ a.nav-link {
 
 .hero-section {
   width: 100%;
-  height: 700px;
+  height: auto;
+  padding-top: 100px;
   text-align: center;
   position: relative;
   background: linear-gradient(45deg, #8089ff 0%, #54ceff 100%);
+  z-index: -1;
 }
 
 .hero-section::before {
   content: "";
-  background-size: 1000px;
   background-repeat: repeat;
   background-image: url("./assests/hero-bg-first-layer.svg");
   background-position: center center;
@@ -95,6 +112,20 @@ a.nav-link {
   bottom: 0;
   z-index: 1;
   background-size: contain;
+  z-index: -1;
+}
+
+.hero-section::after {
+  display: block;
+  content: "";
+  height: 12%;
+  background: url(./assests/hero-bg-waves.svg) bottom no-repeat;
+  background-size: contain;
+  position: absolute;
+  bottom: -1px;
+  left: -20%;
+  right: -20%;
+  z-index: -1;
 }
 
 .hero-container {
@@ -102,6 +133,7 @@ a.nav-link {
   margin: 0 auto;
   height: auto;
   padding-top: 60px;
+  text-align: center;
 }
 
 .hero-container h1 {
@@ -144,4 +176,17 @@ p.hero-paragraph {
 .hero-button-second {
   background: -moz-linear-gradient(45deg, #19d9b4 0%, #92d275 100%);
   background: linear-gradient(45deg, #19d9b4 0%, #92d275 100%);
+}
+
+.hero-center-image-container {
+  max-width: 80%;
+  margin: 0 auto;
+  margin-top: 75px;
+}
+
+.hero-center-image {
+  display: inline-block;
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
 }
