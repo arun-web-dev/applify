@@ -4,13 +4,20 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="style.css" />
 
     <title>APPLIFY</title>
   </head>
   <body>
-    <div class="container ">
-      <section class="header-section ">
+    <div class="container">
+      <section class="header-section">
         <header class="header-container">
           <nav class="navigation-container">
             <div class="logo-container">
@@ -24,18 +31,36 @@
             </div>
 
             <div class="nav-links-container">
-              <ul>
-                <li><a href="#" class="nav-link">Features</a></li>
-                <li><a href="#" class="nav-link">Video</a></li>
+              <ul class="nav-links-list">
+                <li><a href="#features" class="nav-link">Features</a></li>
+                <li><a href="#video" class="nav-link">Video</a></li>
                 <li><a href="#" class="nav-link">Steps</a></li>
                 <li><a href="#" class="nav-link">Integrate</a></li>
                 <li><a href="#" class="nav-link">FAQ</a></li>
                 <li><a href="#" class="nav-link">Testimonials</a></li>
               </ul>
-              <a href="#" class="nav-link nav-links-download">Download</a>
+              <div>
+                <a href="#" class="nav-link nav-links-download">DOWNLOAD</a>
+              </div>
+
+              <div class="hamburger" id="hamburger">
+                <div id="line-1" class="line"></div>
+                <div id="line-2" class="line"></div>
+                <div id="line-3" class="line"></div>
+              </div>
             </div>
           </nav>
         </header>
+        <div class="nav-link-slides">
+          <ul>
+            <li><a href="#" class="nav-link-slide">Features</a></li>
+            <li><a href="#" class="nav-link-slide">Video</a></li>
+            <li><a href="#" class="nav-link-slide">Steps</a></li>
+            <li><a href="#" class="nav-link-slide">Integrate</a></li>
+            <li><a href="#" class="nav-link-slide">FAQ</a></li>
+            <li><a href="#" class="nav-link-slide">Testimonials</a></li>
+          </ul>
+        </div>
       </section>
 
       <section class="hero-section">
@@ -46,8 +71,8 @@
               Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit Sed.
             </p>
             <div class="hero-buttons">
-              <button class="hero-button hero-button-first">LEARN MORE</button>
-              <button class="hero-button hero-button-second">DOWNLOAD</button>
+              <a href="#" class="hero-button hero-button-first">LEARN MORE</a>
+              <a href="#" class="hero-button hero-button-second">DOWNLOAD</a>
             </div>
           </div>
           <div class="hero-center-image-container">
@@ -56,6 +81,160 @@
               src="./assests/hero-center-image.png"
               alt="hero-center-image"
             />
+          </div>
+        </div>
+      </section>
+
+      <section class="features-section" id="features">
+        <div class="features-section-container">
+          <div class="features-section-content">
+            <h2 class="features-section-heading">Tabbed Showcase</h2>
+            <p class="features-section-paragraph">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            </p>
+          </div>
+
+          <div class="features-tab-container">
+            <!-- for mobile view -->
+            <div class="features-left-view">
+              <div class="mobile-view">
+                <div class="mobile-outer-layer">
+                  <div class="features-screen-container">
+                    <img src="./assests/device.png" alt="features-phone-icon" />
+                  </div>
+                  <div class="features-mobile-screen">
+                    <img
+                      class="features-screen-image"
+                      src="./assests/app-screen-1.jpg"
+                      alt="app-screen-layer"
+                    />
+                    <img
+                      class="features-screen-image"
+                      src="./assests/app-screen-2.jpg"
+                      alt="app-screen-layer"
+                    />
+                    <img
+                      class="features-screen-image"
+                      src="./assests/app-screen-3.jpg"
+                      alt="app-screen-layer"
+                    />
+                    <img
+                      class="features-screen-image"
+                      src="./assests/app-screen-4.jpg"
+                      alt="app-screen-layer"
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <div class="features-dot-view">
+                <span class="dots" data-dot1="1"></span>
+                <span class="dots" data-dot2="2"></span>
+                <span class="dots" data-dot3="3"></span>
+                <span class="dots" data-dot4="4"></span>
+              </div>
+            </div>
+
+            <!-- for right side view -->
+            <div class="features-right-view">
+              <div class="feature-right-top-links">
+                <div class="features-links-container">
+                  <a href="#" class="feature-link active">
+                    <em class="fa fa-home" aria-hidden="true"></em>
+                    HOME
+                  </a>
+                  <a href="#" class="feature-link">
+                    <em class="fa-solid fa-user"></em>
+                    PROFILE
+                  </a>
+                  <a href="#" class="feature-link">
+                    <em class="fa fa-solid fa-envelope-open-text"></em>
+                    MESSAGES
+                  </a>
+                  <a href="#" class="feature-link">
+                    <em class="fa fa-solid fa-envelope-open-text"></em>
+                    SETTINGS
+                  </a>
+                </div>
+              </div>
+              <div class="features-right-view-content">
+                <div>
+                  <p class="features-sub-heading">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua.
+                  </p>
+                </div>
+
+                <div class="checklist-container">
+                  <div>
+                    <em class="fa-solid fa-circle-check"></em>
+                  </div>
+                  <div>
+                    <h6 class="heading">Consectetur adipisicing</h6>
+                  </div>
+                </div>
+
+                <div class="checklist-container">
+                  <div>
+                    <em class="fa-solid fa-circle-check"></em>
+                  </div>
+                  <div>
+                    <h6 class="heading">Eiusmod tempor incididunt</h6>
+                  </div>
+                </div>
+
+                <div class="checklist-container">
+                  <div>
+                    <em class="fa-solid fa-circle-check"></em>
+                  </div>
+                  <div>
+                    <h6 class="heading">Ut enim ad minim</h6>
+                  </div>
+                </div>
+
+                <div class="checklist-container">
+                  <div>
+                    <em class="fa-solid fa-circle-check"></em>
+                  </div>
+                  <div>
+                    <h6 class="heading">Lorem ipsum dolor</h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="video-section" id="video">
+        <div class="video-section-container">
+          <div class="video-container-left">
+            <h2 class="video-container-heading">Devoted to UI/UX quality</h2>
+            <p class="video-container-paragraph">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis
+            </p>
+            <div>
+              <a href="#" class="video-container-link">
+                <span class="play-icon icon fa fa-play bg-indigo"></span>
+                HOW APPLIFY WORKS
+              </a>
+            </div>
+          </div>
+          <div class="video-container-right">
+            <img src="./assests/video-mockup.png" alt="video-container-phone" />
+          </div>
+        </div>
+      </section>
+
+      <section class="steps-section">
+        <div class="steps-container">
+          <div class="steps-container-content">
+            <h2 class="steps-container-heading">
+              All in 3 Easy Steps
+            </h2>
           </div>
         </div>
       </section>
