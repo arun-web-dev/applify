@@ -1,6 +1,6 @@
-@import url("https://fonts.googleapis.com/css2?family=Cookie&family=Source+Sans+Pro:wght@400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cookie&family=Source+Sans+Pro:wght@400;500;600;700&display=swap");
 
-@import url("https://fonts.googleapis.com/css2?family=Cookie&family=Open+Sans:wght@400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cookie&family=Open+Sans:wght@400;500;600;700&display=swap");
 
 * {
   margin: 0;
@@ -8,9 +8,16 @@
   box-sizing: border-box;
 }
 
+
 body {
   font-family: "Source Sans Pro", sans-serif;
   line-height: 1.4;
+}
+
+
+img {
+  max-width: 100%;
+  height: auto;
 }
 
 a {
@@ -847,6 +854,301 @@ p.hero-paragraph {
   height: auto;
   object-fit: cover;
   border-radius: 100%;
+}
+
+/* faq section  */
+
+.faq-section {
+  width: 100%;
+  background: #f6f7f8;
+  padding: 8rem 0;
+}
+
+.faq-container {
+  max-width: 80%;
+  margin: 0 auto;
+}
+.faq-container-content {
+  text-align: center;
+  margin-bottom: 64px;
+}
+
+.faq-container-content-heading {
+  font-size: 32px;
+  margin-bottom: 28px;
+  color: #8089ff;
+}
+
+.faq-container-content-paragraph {
+  max-width: 500px;
+  font-size: 18px;
+  margin: 0 auto;
+  font-weight: 500;
+  color: #59687c;
+  font-family: "Open Sans", sans-serif;
+}
+
+.faq-section-bottom-container {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  box-shadow: 0 1px 3px rgba(0, 9, 128, 0.05), 0 2px 5px rgba(0, 9, 128, 0.035);
+}
+
+.faq-section-left {
+  flex: 0.5;
+}
+
+.faq-section-right {
+  flex: 0.5;
+}
+
+.faq-toggle-container {
+  background-color: #fff;
+  color: #414c5a;
+  padding: 16px 24px;
+  margin-bottom: 16px;
+}
+
+.faq-toggle-container-top {
+  display: flex;
+  justify-content: space-between;
+  font-size: 18px;
+
+  align-items: center;
+}
+
+.faq-down-icon {
+  font-size: 20px;
+}
+
+.faq-toggle-container-bottom-paragraph {
+  color: #708198;
+  font-size: 16px;
+  margin-bottom: 4px;
+}
+
+.faq-learn-more {
+  font-size: 18px;
+  color: #8089ff;
+}
+
+.faq-toggle-container-top-heading {
+  font-size: 18px;
+}
+
+.testimonials-section {
+  background-color: white;
+  width: 100%;
+  padding: 8rem 0;
+}
+
+.testimonials-container-top {
+  text-align: center;
+  margin-bottom: 64px;
+}
+
+.testimonials-container {
+  max-width: 80%;
+  margin: 0px auto;
+  overflow: hidden;
+}
+
+.testimonials-container-top-heading {
+  margin-bottom: 28px;
+  font-size: 32px;
+  color: #8089ff;
+  font-weight: 700;
+}
+
+.testimonials-container-top-paragraph {
+  font-size: 18px;
+  font-weight: 400;
+  color: #59687c;
+}
+
+.testimonials-image-container {
+  display: flex;
+  flex-direction: column;
+  min-width: 360px;
+  height: 240px;
+  padding: 24px;
+}
+
+.testimonial-review-bottom-heading {
+  color: #59687c;
+  margin: 4px 0;
+  font-size: 16px;
+}
+
+.testimonial-review-bottom {
+  display: flex;
+  margin-top: 16px;
+}
+
+.testimonial-sub-heading {
+  font-size: 15.2px;
+  color: #708198;
+}
+
+.testimonial-review-top {
+  font-family: "Source Sans Pro", sans-serif;
+  color: #414c5a;
+  margin-bottom: 0;
+  font-weight: 600;
+  position: relative;
+  padding: 1.5rem;
+  overflow: visible;
+  text-align: center;
+  box-shadow: 0 3px 5px rgba(0, 9, 128, 0.05), 0 4px 10px rgba(0, 9, 128, 0.035);
+}
+
+.testimonial-review-top::before {
+  display: block;
+  position: absolute;
+  content: "";
+  background-image: url("./assests/double-comma.svg");
+  background-size: cover;
+  top: 0.75rem;
+  left: 1rem;
+  width: 40px;
+  height: 40px;
+  opacity: 0.2;
+}
+
+.testimonial-review-top::after {
+  display: block;
+  font-family: "FontAwesome";
+  content: "\f0d7";
+  position: absolute;
+  top: 100%;
+  font-size: 50px;
+  height: 10px;
+  line-height: 10px;
+  left: 1rem;
+  color: #fff;
+  text-shadow: 0 5px 5px rgba(0, 9, 128, 0.05), 0 5px 10px rgba(0, 9, 128, 0.05);
+}
+
+.testimonials-dots {
+  display: flex;
+  justify-content: center;
+}
+
+.testimonial-dot {
+  width: 8px;
+  height: 8px;
+  margin-right: 10px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 100%;
+  margin-top: 15px;
+}
+
+.testimonials-container-bottom {
+  display: flex;
+}
+
+.download-section {
+  background-color: #8089ff;
+  padding: 8rem 0;
+}
+
+.download-container {
+  max-width: 80%;
+  margin: 0 auto;
+  text-align: center;
+}
+.download-logo-container {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.download-logo-image {
+  display: inline-block;
+  width: 90px;
+  height: 90px;
+  object-fit: cover;
+  border-radius: 1.25rem;
+  box-shadow: 0 5px 10px rgba(0, 9, 128, 0.035),
+    0 7px 18px rgba(0, 9, 128, 0.05);
+}
+
+/* download section  */
+.download-container-content-heading {
+  margin-bottom: 28px;
+  color: #ffffff;
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.download-container-content {
+  margin-bottom: 4rem;
+}
+
+.download-container-content-paragraph {
+  color: #fff;
+  font-size: 18px;
+}
+
+.download-store.store-section {
+  justify-content: center;
+}
+
+.footer-section {
+  padding: 1.25rem 0;
+  background-color: #59687c;
+}
+
+.footer-container {
+  max-width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex: 1;
+}
+
+.footer-container-left {
+  flex: 0.5;
+}
+
+.footer-container-right {
+  flex: 0.5;
+  display: flex;
+  justify-content: right;
+}
+
+.footer-container-paragraph {
+  font-size: 14.4px;
+  color: #ffffffd9;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  width: 37px;
+  height: 37px;
+  background-color: black;
+  border-radius: 100%;
+  color: #ffffffd9;
+  margin-right: 5px;
+}
+
+.footer-links.footer-links-one {
+  background: linear-gradient(45deg, #8089ff 0%, #54ceff 100%);
+}
+
+.footer-links.footer-links-two {
+  background: linear-gradient(45deg, #fe60a1 0%, #ff8765 100%);
+}
+
+.footer-links.footer-links-three {
+  background: -moz-linear-gradient(45deg, #19d9b4 0%, #92d275 100%);
+  background: linear-gradient(45deg, #19d9b4 0%, #92d275 100%);
+}
+
+.footer-links.footer-links-four {
+  background: linear-gradient(45deg, #fd81b5 0%, #c961f7 50%, #8089ff 100%);
 }
 
 /* Media queries  start 1024px*/
