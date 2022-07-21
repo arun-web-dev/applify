@@ -17,3 +17,6 @@ window.addEventListener("scroll", () => {
     logoImageEl.src = "./assests/applify-logo-white.png";
   }
 });
+
+
+
