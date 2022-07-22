@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Author:Gangatharan" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
@@ -15,8 +16,10 @@
 
     <title>APPLIFY</title>
   </head>
+
   <body>
     <div class="container">
+      <!-- Header Section -->
       <header class="header-section">
         <div class="header-container">
           <nav class="navigation-container">
@@ -32,7 +35,7 @@
 
             <div class="nav-links-container">
               <ul class="nav-links-list">
-                <li><a href="#features" class="nav-link">Features</a></li>
+                <li><a href="#features " class="nav-link">Features</a></li>
                 <li><a href="#video" class="nav-link">Video</a></li>
                 <li><a href="#steps" class="nav-link">Steps</a></li>
                 <li><a href="#integrate" class="nav-link">Integrate</a></li>
@@ -57,16 +60,19 @@
         </div>
         <div class="nav-link-slides">
           <ul>
-            <li><a href="#" class="nav-link-slide">Features</a></li>
-            <li><a href="#" class="nav-link-slide">Video</a></li>
-            <li><a href="#" class="nav-link-slide">Steps</a></li>
-            <li><a href="#" class="nav-link-slide">Integrate</a></li>
-            <li><a href="#" class="nav-link-slide">FAQ</a></li>
-            <li><a href="#" class="nav-link-slide">Testimonials</a></li>
+            <li><a href="#features" class="nav-link-slide">Features</a></li>
+            <li><a href="#video" class="nav-link-slide">Video</a></li>
+            <li><a href="#steps" class="nav-link-slide">Steps</a></li>
+            <li><a href="#integrate" class="nav-link-slide">Integrate</a></li>
+            <li><a href="#faq" class="nav-link-slide">FAQ</a></li>
+            <li>
+              <a href="#testimonials" class="nav-link-slide">Testimonials</a>
+            </li>
           </ul>
         </div>
       </header>
 
+      <!-- Hero Section -->
       <section class="hero-section">
         <div class="hero-container">
           <div>
@@ -75,8 +81,12 @@
               Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit Sed.
             </p>
             <div class="hero-buttons">
-              <a href="#" class="hero-button hero-button-first">LEARN MORE</a>
-              <a href="#" class="hero-button hero-button-second">DOWNLOAD</a>
+              <a href="#features" class="hero-button hero-button-first"
+                >LEARN MORE</a
+              >
+              <a href="#download" class="hero-button hero-button-second"
+                >DOWNLOAD</a
+              >
             </div>
           </div>
           <div class="hero-center-image-container">
@@ -89,6 +99,7 @@
         </div>
       </section>
 
+      <!-- Features Section -->
       <section class="features-section" id="features">
         <div class="features-section-container">
           <div class="features-section-content">
@@ -108,21 +119,25 @@
                   </div>
                   <div class="features-mobile-screen">
                     <img
+                      data-slide-image="1"
                       class="features-screen-image"
                       src="./assests/app-screen-1.jpg"
                       alt="app-screen-layer"
                     />
                     <img
+                      data-slide-image="2"
                       class="features-screen-image"
                       src="./assests/app-screen-2.jpg"
                       alt="app-screen-layer"
                     />
                     <img
+                      data-slide-image="3"
                       class="features-screen-image"
                       src="./assests/app-screen-3.jpg"
                       alt="app-screen-layer"
                     />
                     <img
+                      data-slide-image="4"
                       class="features-screen-image"
                       src="./assests/app-screen-4.jpg"
                       alt="app-screen-layer"
@@ -132,10 +147,13 @@
               </div>
 
               <div class="features-dot-view">
-                <span class="dots" data-dot1="1"></span>
-                <span class="dots" data-dot2="2"></span>
-                <span class="dots" data-dot3="3"></span>
-                <span class="dots" data-dot4="4"></span>
+                <span
+                  class="features-dots-item active"
+                  data-slide-image="1"
+                ></span>
+                <span class="features-dots-item" data-slide-image="2"></span>
+                <span class="features-dots-item" data-slide-image="3"></span>
+                <span class="features-dots-item" data-slide-image="4"></span>
               </div>
             </div>
 
@@ -143,66 +161,218 @@
             <div class="features-right-view">
               <div class="feature-right-top-links">
                 <div class="features-links-container">
-                  <a href="#" class="feature-link active">
-                    <em class="fa fa-home" aria-hidden="true"></em>
+                  <a href="#" class="feature-link active" data-slide-image="1">
+                    <em
+                      class="fa fa-home"
+                      aria-hidden="true"
+                      data-slide-image="1"
+                    ></em>
                     HOME
                   </a>
-                  <a href="#" class="feature-link">
-                    <em class="fa-solid fa-user"></em>
+                  <a href="#" class="feature-link" data-slide-image="2">
+                    <em class="fa-solid fa-user" data-slide-image="2"></em>
                     PROFILE
                   </a>
-                  <a href="#" class="feature-link">
-                    <em class="fa fa-solid fa-envelope-open-text"></em>
+                  <a href="#" class="feature-link" data-slide-image="3">
+                    <em
+                      class="fa fa-solid fa-envelope-open-text"
+                      data-slide-image="3"
+                    ></em>
                     MESSAGES
                   </a>
-                  <a href="#" class="feature-link">
-                    <em class="fa fa-solid fa-envelope-open-text"></em>
+                  <a href="#" class="feature-link" data-slide-image="4">
+                    <em class="fa-solid fa-gear" data-slide-image="4"></em>
                     SETTINGS
                   </a>
                 </div>
               </div>
               <div class="features-right-view-content">
-                <div>
-                  <p class="features-sub-heading">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                    sed do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua.
-                  </p>
+                <div
+                  class="features-right-view-top active"
+                  data-slide-image="1"
+                >
+                  <div>
+                    <p class="features-sub-heading">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore magna
+                      aliqua.
+                    </p>
+                  </div>
+
+                  <div class="checklist-container">
+                    <div>
+                      <em class="fa-solid fa-circle-check"></em>
+                    </div>
+                    <div>
+                      <h6 class="heading">Consectetur adipisicing</h6>
+                    </div>
+                  </div>
+
+                  <div class="checklist-container">
+                    <div>
+                      <em class="fa-solid fa-circle-check"></em>
+                    </div>
+                    <div>
+                      <h6 class="heading">Eiusmod tempor incididunt</h6>
+                    </div>
+                  </div>
+
+                  <div class="checklist-container">
+                    <div>
+                      <em class="fa-solid fa-circle-check"></em>
+                    </div>
+                    <div>
+                      <h6 class="heading">Ut enim ad minim</h6>
+                    </div>
+                  </div>
+
+                  <div class="checklist-container">
+                    <div>
+                      <em class="fa-solid fa-circle-check"></em>
+                    </div>
+                    <div>
+                      <h6 class="heading">Lorem ipsum dolor</h6>
+                    </div>
+                  </div>
                 </div>
 
-                <div class="checklist-container">
+                <!-- second  -->
+                <div class="features-right-view-top" data-slide-image="2">
                   <div>
-                    <em class="fa-solid fa-circle-check"></em>
+                    <p class="features-sub-heading">
+                      Duis aute irure dolor in reprehenderit in voluptate velit
+                      esse cillum dolore eu fugiat nulla pariatur. Excepteur
+                      sint occaecat cupidatat non.
+                    </p>
                   </div>
-                  <div>
-                    <h6 class="heading">Consectetur adipisicing</h6>
+
+                  <div class="checklist-container">
+                    <div>
+                      <em class="fa-solid fa-circle-check"></em>
+                    </div>
+                    <div>
+                      <h6 class="heading">Eiusmod tempor incididunt</h6>
+                    </div>
+                  </div>
+
+                  <div class="checklist-container">
+                    <div>
+                      <em class="fa-solid fa-circle-check"></em>
+                    </div>
+                    <div>
+                      <h6 class="heading">Consectetur adipisicing</h6>
+                    </div>
+                  </div>
+
+                  <div class="checklist-container">
+                    <div>
+                      <em class="fa-solid fa-circle-check"></em>
+                    </div>
+                    <div>
+                      <h6 class="heading">Lorem ipsum dolor</h6>
+                    </div>
+                  </div>
+
+                  <div class="checklist-container">
+                    <div>
+                      <em class="fa-solid fa-circle-check"></em>
+                    </div>
+                    <div>
+                      <h6 class="heading">Ut enim ad minim</h6>
+                    </div>
                   </div>
                 </div>
 
-                <div class="checklist-container">
+                <!-- third -->
+                <div class="features-right-view-top" data-slide-image="3">
                   <div>
-                    <em class="fa-solid fa-circle-check"></em>
+                    <p class="features-sub-heading">
+                      Donec nec dolor erat, condimentum sagittis sem. Praesent
+                      porttitor porttitor risus, dapibus rutrum ipsum gravida
+                      et. Integer lectus nisi.
+                    </p>
                   </div>
-                  <div>
-                    <h6 class="heading">Eiusmod tempor incididunt</h6>
+
+                  <div class="checklist-container">
+                    <div>
+                      <em class="fa-solid fa-circle-check"></em>
+                    </div>
+                    <div>
+                      <h6 class="heading">Ut enim ad minim</h6>
+                    </div>
+                  </div>
+
+                  <div class="checklist-container">
+                    <div>
+                      <em class="fa-solid fa-circle-check"></em>
+                    </div>
+                    <div>
+                      <h6 class="heading">Lorem ipsum dolor</h6>
+                    </div>
+                  </div>
+
+                  <div class="checklist-container">
+                    <div>
+                      <em class="fa-solid fa-circle-check"></em>
+                    </div>
+                    <div>
+                      <h6 class="heading">Eiusmod tempor incididunt</h6>
+                    </div>
+                  </div>
+
+                  <div class="checklist-container">
+                    <div>
+                      <em class="fa-solid fa-circle-check"></em>
+                    </div>
+                    <div>
+                      <h6 class="heading">Consectetur adipisicing</h6>
+                    </div>
                   </div>
                 </div>
 
-                <div class="checklist-container">
+                <!-- fourth -->
+                <div class="features-right-view-top" data-slide-image="4">
                   <div>
-                    <em class="fa-solid fa-circle-check"></em>
+                    <p class="features-sub-heading">
+                      Sed consectetur dignissim dignissim. Donec pretium est sit
+                      amet ipsum fringilla feugiat. Aliquam erat volutpat.
+                    </p>
                   </div>
-                  <div>
-                    <h6 class="heading">Ut enim ad minim</h6>
-                  </div>
-                </div>
 
-                <div class="checklist-container">
-                  <div>
-                    <em class="fa-solid fa-circle-check"></em>
+                  <div class="checklist-container">
+                    <div>
+                      <em class="fa-solid fa-circle-check"></em>
+                    </div>
+                    <div>
+                      <h6 class="heading">Eiusmod tempor incididunt</h6>
+                    </div>
                   </div>
-                  <div>
-                    <h6 class="heading">Lorem ipsum dolor</h6>
+
+                  <div class="checklist-container">
+                    <div>
+                      <em class="fa-solid fa-circle-check"></em>
+                    </div>
+                    <div>
+                      <h6 class="heading">Ut enim ad minim</h6>
+                    </div>
+                  </div>
+
+                  <div class="checklist-container">
+                    <div>
+                      <em class="fa-solid fa-circle-check"></em>
+                    </div>
+                    <div>
+                      <h6 class="heading">Consectetur adipisicing</h6>
+                    </div>
+                  </div>
+
+                  <div class="checklist-container">
+                    <div>
+                      <em class="fa-solid fa-circle-check"></em>
+                    </div>
+                    <div>
+                      <h6 class="heading">Lorem ipsum dolor</h6>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -211,6 +381,7 @@
         </div>
       </section>
 
+      <!-- Video Section -->
       <section class="video-section" id="video">
         <div class="video-section-container">
           <div class="video-container-left">
@@ -233,6 +404,7 @@
         </div>
       </section>
 
+      <!-- Steps Section -->
       <section class="steps-section" id="steps">
         <div class="steps-container">
           <div class="steps-container-content">
@@ -243,126 +415,131 @@
           </div>
         </div>
         <div class="steps-box-total-container">
-          <div class="steps-box-container">
-            <div class="steps-box-left">
-              <h4 class="steps-box-left-heading">
-                Multi and single page support
-              </h4>
-              <p class="steps-box-left-paragraph">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat.
-              </p>
-              <div>
-                <a href="#" class="steps-explore-link"
-                  >EXPLORE
-                  <em
-                    class="steps-right-arrow fa-solid fa-arrow-right-long"
-                  ></em
-                ></a>
+          <div>
+            <div class="steps-box-container">
+              <div class="steps-box-left">
+                <h4 class="steps-box-left-heading">
+                  Multi and single page support
+                </h4>
+                <p class="steps-box-left-paragraph">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+                <div>
+                  <a href="#" class="steps-explore-link"
+                    >EXPLORE
+                    <em
+                      class="steps-right-arrow fa-solid fa-arrow-right-long"
+                    ></em
+                  ></a>
+                </div>
+              </div>
+              <div class="steps-box-right">
+                <img
+                  class="steps-image"
+                  src="./assests/steps-right-image-1.png"
+                  alt="stepsRightImageTop"
+                  srcset=""
+                />
               </div>
             </div>
-            <div class="steps-box-right">
-              <img
-                class="steps-image"
-                src="./assests/steps-right-image-1.png"
-                alt="stepsRightImageTop"
-                srcset=""
-              />
-            </div>
-          </div>
 
-          <div class="steps-box-container">
-            <div class="steps-box-right">
-              <img
-                class="steps-image"
-                src="./assests/steps-image-2.png"
-                alt="stepsRightImageTop"
-                srcset=""
-              />
+            <div class="steps-box-container">
+              <div class="steps-box-right">
+                <img
+                  class="steps-image"
+                  src="./assests/steps-image-2.png"
+                  alt="stepsRightImageTop"
+                  srcset=""
+                />
+              </div>
+              <div class="steps-box-left">
+                <h4 class="steps-box-left-heading">
+                  Photoshop mock-ups included free!
+                </h4>
+                <p class="steps-box-left-paragraph">
+                  Duis aute irure dolor in reprehenderit in voluptate velit esse
+                  cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                  occaecat cupidatat non proident, sunt in culpa qui officia
+                  deserunt mollit anim id est laborum.
+                </p>
+                <div>
+                  <a href="#" class="steps-explore-link"
+                    >EXPLORE
+                    <em
+                      class="steps-right-arrow fa-solid fa-arrow-right-long"
+                    ></em
+                  ></a>
+                </div>
+              </div>
             </div>
-            <div class="steps-box-left">
-              <h4 class="steps-box-left-heading">
-                Photoshop mock-ups included free!
-              </h4>
-              <p class="steps-box-left-paragraph">
-                Duis aute irure dolor in reprehenderit in voluptate velit esse
-                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                cupidatat non proident, sunt in culpa qui officia deserunt
-                mollit anim id est laborum.
-              </p>
-              <div>
-                <a href="#" class="steps-explore-link"
-                  >EXPLORE
-                  <em
-                    class="steps-right-arrow fa-solid fa-arrow-right-long"
-                  ></em
-                ></a>
+
+            <div class="steps-box-container">
+              <div class="steps-box-left">
+                <h4 class="steps-box-left-heading">Designed for modern apps</h4>
+                <p class="steps-box-left-paragraph">
+                  Duis aute irure dolor in reprehenderit in voluptate velit esse
+                  cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                  occaecat cupidatat non proident, sunt in culpa qui officia
+                  deserunt mollit anim id est laborum.
+                </p>
+                <div>
+                  <a href="#" class="steps-explore-link"
+                    >EXPLORE
+                    <em
+                      class="steps-right-arrow fa-solid fa-arrow-right-long"
+                    ></em
+                  ></a>
+                </div>
+              </div>
+              <div class="steps-box-right">
+                <img
+                  class="steps-image"
+                  src="./assests/steps-image-3.png"
+                  alt="stepsRightImageTop"
+                  srcset=""
+                />
               </div>
             </div>
           </div>
-
-          <div class="steps-box-container">
-            <div class="steps-box-left">
-              <h4 class="steps-box-left-heading">Designed for modern apps</h4>
-              <p class="steps-box-left-paragraph">
-                Duis aute irure dolor in reprehenderit in voluptate velit esse
-                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                cupidatat non proident, sunt in culpa qui officia deserunt
-                mollit anim id est laborum.
-              </p>
+          <div class="center-round-line">
+            <div class="steps-circle-container">
               <div>
-                <a href="#" class="steps-explore-link"
-                  >EXPLORE
-                  <em
-                    class="steps-right-arrow fa-solid fa-arrow-right-long"
-                  ></em
-                ></a>
+                <span class="steps-circle step-circle-one steps-center-content"
+                  >1</span
+                >
               </div>
-            </div>
-            <div class="steps-box-right">
-              <img
-                class="steps-image"
-                src="./assests/steps-image-3.png"
-                alt="stepsRightImageTop"
-                srcset=""
-              />
-            </div>
-          </div>
+              <div>
+                <span class="steps-circle step-circle-two steps-center-content"
+                  >2</span
+                >
+              </div>
+              <div>
+                <span
+                  class="steps-circle step-circle-three steps-center-content"
+                  >3</span
+                >
+              </div>
 
-          <div class="steps-circle-container">
-            <div>
-              <span class="steps-circle step-circle-one steps-center-content"
-                >1</span
-              >
-            </div>
-            <div>
-              <span class="steps-circle step-circle-two steps-center-content"
-                >2</span
-              >
-            </div>
-            <div>
-              <span class="steps-circle step-circle-three steps-center-content"
-                >3</span
-              >
-            </div>
-
-            <div>
-              <span
-                class="steps-line step-line-one steps-center-content"
-              ></span>
-            </div>
-            <div>
-              <span
-                class="steps-line step-line-two steps-center-content"
-              ></span>
+              <div>
+                <span
+                  class="steps-line step-line-one steps-center-content"
+                ></span>
+              </div>
+              <div>
+                <span
+                  class="steps-line step-line-two steps-center-content"
+                ></span>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
-      <section class="available-on">
+      <!-- Available On Section -->
+      <section class="available-on-section">
         <div class="available-on-container">
           <div class="available-on-right">
             <h2 class="available-on-right-heading">
@@ -413,6 +590,7 @@
         </div>
       </section>
 
+      <!-- App Screen Section -->
       <section class="app-screens-section">
         <div class="app-screens-container">
           <div class="app-screens-container-content">
@@ -477,6 +655,7 @@
         </div>
       </section>
 
+      <!-- Integrate Section -->
       <section class="integrate-section" id="integrate">
         <div class="integrate-section-container">
           <div class="integrate-container-left">
@@ -498,7 +677,7 @@
                     Do Eiusmod Tempor Incididunt Ut Labore Et Dolore
                   </p>
 
-                  <a class="integrate-explore-links">
+                  <a href="#" class="integrate-explore-links">
                     Learn More
                     <em
                       class="steps-right-arrow fa-solid fa-arrow-right-long"
@@ -517,7 +696,7 @@
                     Do Eiusmod Tempor Incididunt Ut Labore Et Dolore
                   </p>
 
-                  <a class="integrate-explore-links">
+                  <a href="#" class="integrate-explore-links">
                     Learn More
                     <em
                       class="steps-right-arrow fa-solid fa-arrow-right-long"
@@ -536,7 +715,7 @@
                     Do Eiusmod Tempor Incididunt Ut Labore Et Dolore
                   </p>
 
-                  <a class="integrate-explore-links">
+                  <a href="#" class="integrate-explore-links">
                     Learn More
                     <em
                       class="steps-right-arrow fa-solid fa-arrow-right-long"
@@ -843,6 +1022,7 @@
         </div>
       </section>
 
+      <!-- FAQ Section -->
       <section class="faq-section" id="faq">
         <div class="faq-container">
           <div class="faq-container-content">
@@ -952,6 +1132,7 @@
         </div>
       </section>
 
+      <!-- Testimonials Section -->
       <section class="testimonials-section" id="testimonials">
         <div class="testimonials-container">
           <div class="testimonials-container-top">
@@ -1092,6 +1273,7 @@
         </div>
       </section>
 
+      <!-- Download Section -->
       <section class="download-section" id="download">
         <div class="download-container">
           <div class="download-logo-container">
@@ -1143,6 +1325,7 @@
         </div>
       </section>
 
+      <!-- Footer Section -->
       <footer class="footer-section">
         <div class="footer-container">
           <div class="footer-container-left">
@@ -1153,38 +1336,42 @@
 
           <div class="footer-container-right">
             <a
+              
+              href="https://www.facebook.com"
+              target="_blank"
               class="footer-links footer-links-one"
-              href="www.facebook.com"
-              target="_blank"
             >
-              <i class="fa-brands fa-facebook-f"></i>
+              <em class="fa-brands fa-facebook-f"></em>
             </a>
             <a
+            
+              href="https://www.instagram.com"
               class="footer-links footer-links-two"
-              href="www.instagram.com"
               target="_blank"
             >
-              <i class="fa-brands fa-instagram"></i>
+              <em class="fa-brands fa-instagram"></em>
             </a>
             <a
+              
+              href="https://www.twitter.com"
               class="footer-links footer-links-three"
-              href="www.twitter.com"
               target="_blank"
             >
-              <i class="fa-brands fa-twitter"></i>
+              <em class="fa-brands fa-twitter"></em>
             </a>
             <a
-              class="footer-links footer-links-four"
-              href="www.pinterest.com"
+             
+              href="https://www.pinterest.com"
               target="_blank"
+              class="footer-links footer-links-four"
             >
-              <i class="fa-brands fa-pinterest"></i>
+              <em class="fa-brands fa-pinterest"></em>
             </a>
           </div>
         </div>
       </footer>
     </div>
 
-    <script src="./script.js" defer></script>
+    <script src="./script.js"></script>
   </body>
 </html>
