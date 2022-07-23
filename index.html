@@ -5,6 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Author:Gangatharan" />
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
@@ -604,7 +609,65 @@
           </div>
 
           <div class="carausol-container">
-            <div>
+            <!-- Swiper  -->
+            <div class="swiper mySwiper1 swiper1">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img
+                    class="carasoul-image-swiper"
+                    src="./assests/carasol-image-one.jpg"
+                    alt="carasol-image-one"
+                    srcset=""
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    class="carasoul-image-swiper"
+                    src="./assests/carasol-image-two.jpg"
+                    alt="carasol-image-two"
+                    srcset=""
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    class="carasoul-image-swiper"
+                    src="./assests/carasol-image-three.jpg"
+                    alt="carasol-image-three"
+                    srcset=""
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    class="carasoul-image-swiper"
+                    src="./assests/carasol-image-four.jpg"
+                    alt="carasol-image-four"
+                    srcset=""
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    class="carasoul-image-swiper"
+                    src="./assests/carasol-image-five.jpg"
+                    alt="carasol-image-five"
+                    srcset=""
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    class="carasoul-image-swiper"
+                    src="./assests/carasol-image-six.jpg"
+                    alt="carasol-image-six"
+                    srcset=""
+                  />
+                </div>
+              </div>
+            </div>
+            <div
+              class="swiper-pagination swiper-dot-container swiper-pagination1"
+            ></div>
+
+            <!-- First -->
+            <!-- <div>
               <img
                 src="./assests/carasol-image-one.jpg"
                 alt="carasol-image-one"
@@ -640,18 +703,24 @@
               />
             </div>
             <div>
-              <img src="./assests/carasol-image-six.jpg" alt="" srcset="" />
-            </div>
+              <img
+                src="./assests/carasol-image-six.jpg"
+                alt="carasol-image-six"
+                srcset=""
+              />
+            </div> -->
+
+            <!-- Carausol End -->
           </div>
 
-          <div class="carausol-button-container">
+          <!-- <div class="carausol-button-container">
             <span class="carausol-button"></span
             ><span class="carausol-button"></span
             ><span class="carausol-button"></span
             ><span class="carausol-button"></span
             ><span class="carausol-button"></span
             ><span class="carausol-button"></span>
-          </div>
+          </div> -->
         </div>
       </section>
 
@@ -1037,7 +1106,7 @@
 
           <div class="faq-section-bottom-container">
             <div class="faq-section-left">
-              <div class="faq-toggle-container">
+              <div class="faq-toggle-container active">
                 <div class="faq-toggle-container-top">
                   <h6 class="faq-toggle-container-top-heading">
                     1. Lorem Ipsum Dolor Sit?
@@ -1046,7 +1115,7 @@
                     <em class="fa-solid fa-caret-down"></em>
                   </div>
                 </div>
-                <div class="faq-toggle-container-bottom">
+                <div class="faq-toggle-container-bottom active">
                   <p class="faq-toggle-container-bottom-paragraph">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit,
                     sed do eiusmod tempor incididunt ut labore et dolore magna
@@ -1144,132 +1213,267 @@
           </div>
 
           <div class="testimonials-container-bottom">
-            <div class="testimonials-image-container">
-              <div class="testimonial-review-top">
-                Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                laboris nisi ut aliquip ex ea commodo.
-              </div>
+            <div class="swiper mySwiper2 swiper2">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="testimonials-image-container">
+                    <div class="testimonial-review-top">
+                      Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                      laboris nisi ut aliquip ex ea commodo.
+                    </div>
 
-              <div class="testimonial-review-bottom">
-                <div style="width: 60px; height: 60px">
-                  <img
-                    src="./assests/avatar1.png"
-                    alt="avatar"
-                    style="object-fit: cover; max-width: 100%; height: auto"
-                  />
+                    <div class="testimonial-review-bottom">
+                      <div style="width: 60px; height: 60px">
+                        <img
+                          src="./assests/avatar1.png"
+                          alt="avatar"
+                          style="
+                            object-fit: cover;
+                            max-width: 100%;
+                            height: auto;
+                          "
+                        />
+                      </div>
+                      <div class="">
+                        <h6 class="testimonial-review-bottom-heading">
+                          Jack Smith
+                        </h6>
+                        <p class="testimonial-sub-heading">
+                          Founder at Smith &amp; Co
+                        </p>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-                <div class="">
-                  <h6 class="testimonial-review-bottom-heading">Jack Smith</h6>
-                  <p class="testimonial-sub-heading">
-                    Founder at Smith &amp; Co
-                  </p>
+                <div class="swiper-slide">
+                  <div class="testimonials-image-container">
+                    <div class="testimonial-review-top">
+                      Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                      laboris nisi ut aliquip ex ea commodo.
+                    </div>
+
+                    <div class="testimonial-review-bottom">
+                      <div style="width: 60px; height: 60px">
+                        <img
+                          src="./assests/avatar1.png"
+                          alt="avatar"
+                          style="
+                            object-fit: cover;
+                            max-width: 100%;
+                            height: auto;
+                          "
+                        />
+                      </div>
+                      <div class="">
+                        <h6 class="testimonial-review-bottom-heading">
+                          Jack Smith
+                        </h6>
+                        <p class="testimonial-sub-heading">
+                          Founder at Smith &amp; Co
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="testimonials-image-container">
+                    <div class="testimonial-review-top">
+                      Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                      laboris nisi ut aliquip ex ea commodo.
+                    </div>
+
+                    <div class="testimonial-review-bottom">
+                      <div style="width: 60px; height: 60px">
+                        <img
+                          src="./assests/avatar1.png"
+                          alt="avatar"
+                          style="
+                            object-fit: cover;
+                            max-width: 100%;
+                            height: auto;
+                          "
+                        />
+                      </div>
+                      <div class="">
+                        <h6 class="testimonial-review-bottom-heading">
+                          Jack Smith
+                        </h6>
+                        <p class="testimonial-sub-heading">
+                          Founder at Smith &amp; Co
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="testimonials-image-container">
+                    <div class="testimonial-review-top">
+                      Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                      laboris nisi ut aliquip ex ea commodo.
+                    </div>
+
+                    <div class="testimonial-review-bottom">
+                      <div style="width: 60px; height: 60px">
+                        <img
+                          src="./assests/avatar1.png"
+                          alt="avatar"
+                          style="
+                            object-fit: cover;
+                            max-width: 100%;
+                            height: auto;
+                          "
+                        />
+                      </div>
+                      <div class="">
+                        <h6 class="testimonial-review-bottom-heading">
+                          Jack Smith
+                        </h6>
+                        <p class="testimonial-sub-heading">
+                          Founder at Smith &amp; Co
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="testimonials-image-container">
+                    <div class="testimonial-review-top">
+                      Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                      laboris nisi ut aliquip ex ea commodo.
+                    </div>
+
+                    <div class="testimonial-review-bottom">
+                      <div style="width: 60px; height: 60px">
+                        <img
+                          src="./assests/avatar1.png"
+                          alt="avatar"
+                          style="
+                            object-fit: cover;
+                            max-width: 100%;
+                            height: auto;
+                          "
+                        />
+                      </div>
+                      <div class="">
+                        <h6 class="testimonial-review-bottom-heading">
+                          Jack Smith
+                        </h6>
+                        <p class="testimonial-sub-heading">
+                          Founder at Smith &amp; Co
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="testimonials-image-container">
+                    <div class="testimonial-review-top">
+                      Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                      laboris nisi ut aliquip ex ea commodo.
+                    </div>
+
+                    <div class="testimonial-review-bottom">
+                      <div style="width: 60px; height: 60px">
+                        <img
+                          src="./assests/avatar1.png"
+                          alt="avatar"
+                          style="
+                            object-fit: cover;
+                            max-width: 100%;
+                            height: auto;
+                          "
+                        />
+                      </div>
+                      <div class="">
+                        <h6 class="testimonial-review-bottom-heading">
+                          Jack Smith
+                        </h6>
+                        <p class="testimonial-sub-heading">
+                          Founder at Smith &amp; Co
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="testimonials-image-container">
+                    <div class="testimonial-review-top">
+                      Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                      laboris nisi ut aliquip ex ea commodo.
+                    </div>
+
+                    <div class="testimonial-review-bottom">
+                      <div style="width: 60px; height: 60px">
+                        <img
+                          src="./assests/avatar1.png"
+                          alt="avatar"
+                          style="
+                            object-fit: cover;
+                            max-width: 100%;
+                            height: auto;
+                          "
+                        />
+                      </div>
+                      <div class="">
+                        <h6 class="testimonial-review-bottom-heading">
+                          Jack Smith
+                        </h6>
+                        <p class="testimonial-sub-heading">
+                          Founder at Smith &amp; Co
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="testimonials-image-container">
+                    <div class="testimonial-review-top">
+                      Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                      laboris nisi ut aliquip ex ea commodo.
+                    </div>
+
+                    <div class="testimonial-review-bottom">
+                      <div style="width: 60px; height: 60px">
+                        <img
+                          src="./assests/avatar1.png"
+                          alt="avatar"
+                          style="
+                            object-fit: cover;
+                            max-width: 100%;
+                            height: auto;
+                          "
+                        />
+                      </div>
+                      <div class="">
+                        <h6 class="testimonial-review-bottom-heading">
+                          Jack Smith
+                        </h6>
+                        <p class="testimonial-sub-heading">
+                          Founder at Smith &amp; Co
+                        </p>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
             </div>
 
             <!-- second -->
-            <div class="testimonials-image-container">
-              <div class="testimonial-review-top">
-                Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                laboris nisi ut aliquip ex ea commodo.
-              </div>
-
-              <div class="testimonial-review-bottom">
-                <div style="width: 60px; height: 60px">
-                  <img
-                    src="./assests/avatar1.png"
-                    alt="avatar"
-                    style="object-fit: cover; max-width: 100%; height: auto"
-                  />
-                </div>
-                <div class="">
-                  <h6 class="testimonial-review-bottom-heading">Jack Smith</h6>
-                  <p class="testimonial-sub-heading">
-                    Founder at Smith &amp; Co
-                  </p>
-                </div>
-              </div>
-            </div>
 
             <!-- third -->
-            <div class="testimonials-image-container">
-              <div class="testimonial-review-top">
-                Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                laboris nisi ut aliquip ex ea commodo.
-              </div>
-
-              <div class="testimonial-review-bottom">
-                <div style="width: 60px; height: 60px">
-                  <img
-                    src="./assests/avatar1.png"
-                    alt="avatar"
-                    style="object-fit: cover; max-width: 100%; height: auto"
-                  />
-                </div>
-                <div class="">
-                  <h6 class="testimonial-review-bottom-heading">Jack Smith</h6>
-                  <p class="testimonial-sub-heading">
-                    Founder at Smith &amp; Co
-                  </p>
-                </div>
-              </div>
-            </div>
 
             <!-- fourth -->
 
-            <div class="testimonials-image-container">
-              <div class="testimonial-review-top">
-                Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                laboris nisi ut aliquip ex ea commodo.
-              </div>
-
-              <div class="testimonial-review-bottom">
-                <div style="width: 60px; height: 60px">
-                  <img
-                    src="./assests/avatar1.png"
-                    alt="avatar"
-                    style="object-fit: cover; max-width: 100%; height: auto"
-                  />
-                </div>
-                <div class="">
-                  <h6 class="testimonial-review-bottom-heading">Jack Smith</h6>
-                  <p class="testimonial-sub-heading">
-                    Founder at Smith &amp; Co
-                  </p>
-                </div>
-              </div>
-            </div>
-
             <!-- fifth -->
-
-            <div class="testimonials-image-container">
-              <div class="testimonial-review-top">
-                Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                laboris nisi ut aliquip ex ea commodo.
-              </div>
-
-              <div class="testimonial-review-bottom">
-                <div style="width: 60px; height: 60px">
-                  <img
-                    src="./assests/avatar1.png"
-                    alt="avatar"
-                    style="object-fit: cover; max-width: 100%; height: auto"
-                  />
-                </div>
-                <div class="">
-                  <h6 class="testimonial-review-bottom-heading">Jack Smith</h6>
-                  <p class="testimonial-sub-heading">
-                    Founder at Smith &amp; Co
-                  </p>
-                </div>
-              </div>
-            </div>
           </div>
-
-          <div class="testimonials-dots">
-            <span class="testimonial-dot"> </span>
-            <span class="testimonial-dot"> </span>
-          </div>
+          <div
+            class="swiper-pagination swiper-pagination2 bottom-swiper-pagination"
+          ></div>
         </div>
       </section>
 
@@ -1336,7 +1540,6 @@
 
           <div class="footer-container-right">
             <a
-              
               href="https://www.facebook.com"
               target="_blank"
               class="footer-links footer-links-one"
@@ -1344,7 +1547,6 @@
               <em class="fa-brands fa-facebook-f"></em>
             </a>
             <a
-            
               href="https://www.instagram.com"
               class="footer-links footer-links-two"
               target="_blank"
@@ -1352,7 +1554,6 @@
               <em class="fa-brands fa-instagram"></em>
             </a>
             <a
-              
               href="https://www.twitter.com"
               class="footer-links footer-links-three"
               target="_blank"
@@ -1360,7 +1561,6 @@
               <em class="fa-brands fa-twitter"></em>
             </a>
             <a
-             
               href="https://www.pinterest.com"
               target="_blank"
               class="footer-links footer-links-four"
@@ -1372,6 +1572,17 @@
       </footer>
     </div>
 
+    <section class="video-model-section">
+      <div class="video-modal-container">
+        <div class="video-modal-iframe"></div>
+
+        <div class="modal-close-btn">
+          <em class="fa-solid fa-xmark"></em>
+        </div>
+      </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
     <script src="./script.js"></script>
   </body>
 </html>
