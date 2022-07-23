@@ -717,11 +717,15 @@ p.hero-paragraph {
   font-size: 14.4px;
   color: #8089ff;
   display: inline-block;
-  transition: all 1s;
+  transition: all 0.5s;
 }
 
 .steps-explore-link:hover {
-  animation: link-move 1s linear;
+  animation: link-move 0.5s linear;
+}
+
+.integrate-explore-links:hover {
+  animation: link-move 0.5s linear;
 }
 
 @keyframes link-move {
@@ -1458,6 +1462,11 @@ p.hero-paragraph {
   border-radius: 100%;
   color: #ffffffd9;
   margin-right: 5px;
+  transition: all 0.4s;
+}
+
+.footer-links:hover {
+  transform: scale3d(1.05, 1.05, 1.05);
 }
 
 .footer-links.footer-links-one {
@@ -1786,6 +1795,22 @@ p.hero-paragraph {
     align-items: center;
     gap: 5px;
   }
+}
+
+.apple-store-container-link:hover {
+  opacity: 0.7;
+  transform: translateY(-3px);
+}
+.apple-store-container-link {
+  transition: all 0.45s;
+}
+
+.play-store-container-link:hover {
+  opacity: 0.7;
+  transform: translateY(-3px);
+}
+.play-store-container-link {
+  transition: all 0.45s;
 }
 
 /* media queries for max width 768px end */

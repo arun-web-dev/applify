@@ -34,10 +34,12 @@ checkWindowWidth();
 window.addEventListener("scroll", () => {
   if (scrollY > 50) {
     headerSectionEl.classList.add("scrolling");
+    headerSectionEl.style.boxShadow = `0 5px 10px rgba(0, 9, 128, 0.035), 0 7px 18px rgba(0, 9, 128, 0.05)`;
     logoImageEl.src = "./assests/applify-logo-color.png";
   } else {
     headerSectionEl.classList.remove("scrolling");
     logoImageEl.src = "./assests/applify-logo-white.png";
+    headerSectionEl.style.boxShadow = `unset`;
   }
 });
 
@@ -331,7 +333,7 @@ closeModalBtn.addEventListener("click", () => {
 // Slder Function
 
 const swiper2 = new Swiper(".mySwiper2", {
-  slidesPerView: 2,
+  slidesPerView: 1,
   spaceBetween: 30,
   slidesPerGroup: 4,
   loop: true,
@@ -343,6 +345,17 @@ const swiper2 = new Swiper(".mySwiper2", {
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
+  },
+
+  breakpoints: {
+    601: {
+      centeredSlides: false,
+      slidesPerView: 2,
+    },
+    600: {
+      centeredSlides: false,
+      slidesPerView: 1,
+    },
   },
 });
 
